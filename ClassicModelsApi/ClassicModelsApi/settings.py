@@ -75,16 +75,16 @@ WSGI_APPLICATION = 'ClassicModelsApi.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql', 
-        'NAME': 'classicmodels',
-        'USER': 'Py_MySQL_User',
-        'PASSWORD': 'rootUser',
-        'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
-        'PORT': '3306',
-    }
-}
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.mysql', 
+#         'NAME': 'classicmodels',
+#         'USER': 'Py_MySQL_User',
+#         'PASSWORD': 'rootUser',
+#         'HOST': 'localhost',   # Or an IP Address that your DB is hosted on
+#         'PORT': '3306',
+#     }
+# }
 
 
 # Password validation
