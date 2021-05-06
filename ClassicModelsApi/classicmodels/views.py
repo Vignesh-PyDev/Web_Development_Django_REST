@@ -48,3 +48,15 @@ def Customers_Update(request,pk):
 		return Response("Customers Detail Not Found")
 
 
+
+@api_view(['DELETE'])
+def Customers_Delete(request,pk):
+	print("delete")
+	try:
+		Customer_Data = Customers.objects.get(customernumber = pk)
+		Customer_Data.delete()
+		return Response("Data Deleted")
+	except Customers.DoesNotExist:
+		return Response("Customers Detail Not Found")
+
+
